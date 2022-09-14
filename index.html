@@ -9,20 +9,25 @@
 </head>
 <body>
     <div id="container">
-        <header>
+        <header id="cabecalho">
             <h1>Conversor de Temperaturas</h1>
         </header>
 
-        <main>
+        <main id="main-container">
             <div id="form-wrap">
+                <p>
+                    Digite a temperatura em °C:
+                </p>
                 <input type="number" name="temperature" id="txtTemperature">
                 <button type="submit" onclick="Converter()">Converter</button>
             </div>
+            <h2 id="temperaturaF"></h2>
+            <h2 id="temperaturaK"></h2>
         </main>
         <footer aria-label="rodapé da página">
             <p>Marcos Winther @ 2022</p>
         </footer>
     </div>
-    
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
